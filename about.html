@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="https://th.bing.com/th/id/OIP.CCG7Wxa3KhVTFTpVXB8vWwEMDo?w=200&h=180&c=7&r=0&o=5&pid=1.7" style="width:30px"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    More
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="chat.html">Chat</a></li>
+                </ul>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><a href="signup.html"><span class="glyphicon glyphicon-check"></span> Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="#">Sign in</a></p>
+      <p><a href="#">Create an Account</a></p>
+      <p><a href="#">Coach Applicaiton</a></p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1 class="page-header">Who<small> are We?</small></h1>
+      <p>We are MVHS Ultimate and we play in the Boise Ultimate Scene Youth (BUSY) league. We are new to the league but we intend to make our mark in our first season. If you have any questions for us check out the Contact page. Rules for Ultimate Frisbee can be found on the rules page</p>
+      <hr>
+      <h1 class="page-header">When<small> do we Start?</small></h1>
+      <p>Our Season starts on March 1st with practices being held every Tuesday and Thursday in front of Mountain View from 3:00(PM) - 4:30(PM). The games are held at Optomist Fields where double headers are held. <B>PLAYERS MUST BE AT THE FIELD AT 4:00!</B> First game is from 4:30(PM) - 5:45(PM) and the second game is from 6:00(PM) - 7:15(PM). The last game of the offical season ends on April 29th and the Tournament will begin shortly after.</p>
+    </div>
+    <div class="col-sm-2 sidenav">
+        <div>
+            <!-- Ad code or image -->
+            <a href="https://www.bulkapothecary.com/?msclkid=655b45cf2d7d1da4ca5023ef0bc07962&utm_source=bing&utm_medium=cpc&utm_campaign=Apothecary&utm_term=%2Bwholesale%20%2Bapothecary&utm_content=Apothecary%20Wholesale%20-%20Broad" target="_blank"><img class="img-rounded" src="https://i.pinimg.com/originals/97/5c/1b/975c1bb2c26c327eacc14863a3e8bfc3.jpg" style="width:100%"></a>
+        </div>
+        <div>
+            <!-- Ad code or image -->
+            <a href="https://www.homedepot.com/b/Appliances-Washers-Dryers-Washing-Machines/LG/N-5yc1vZc3ovZ8qk?mtc=SEM-CM-CML-BNG-D29A-029_008_LAUNDRY-NA-NA-NA-DSA-5163653-NA-NA-NA-NBR-NA-NA-NA-NA&cm_mmc=SEM-CM-CML-BNG-D29A-029_008_LAUNDRY-NA-NA-NA-DSA-5163653-NA-NA-NA-NBR-NA-NA-NA-NA-71700000100811748-58700008116875133-39700076556701580&&msclkid=d9ac4f239a5a17ea47552903bd390749&gclid=d9ac4f239a5a17ea47552903bd390749&gclsrc=3p.ds" target="_blank"><img class="img-rounded" src="https://th.bing.com/th/id/OIP.kCPgt0qkCYtCwsn9kfdj4wHaKE?w=203&h=276&c=7&r=0&o=5&pid=1.7" alt="Ad 1" style="width:100%;"></a>
+            
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Be a Maverick. Join <a href="#">@UltimateMVHS</a></p>
+</footer>
+
+</body>
+</html>
